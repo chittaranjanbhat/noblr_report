@@ -1,0 +1,1 @@
+select * from claims_raw_new.cctl_coveragetype;
