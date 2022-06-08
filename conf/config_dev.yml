@@ -2,24 +2,22 @@ config:
   # Configuration of email notification
   notify:
     email:
-      - "chittaranjan.bhat@hotmail.com"
-#      - "chittaranjan.bhat@wipro.com"
-#      - "dibyaranjan.dalai@wipro.com"
+
 
   # Configure local folder for sql and temporary data store for notification
   localfs:
-    xls_path: "/home/gwcda_code/noblrReport/output"
-    sql_path: "/home/gwcda_code/noblrReport/conf"
+    xls_path: "/"
+    sql_path: "/"
 
   #Secret manager details to fetch postgres creds
   secrets:
-    secret_name: "dev/postgres"
-    secret_region: "us-west-2"
+    secret_name: ""
+    secret_region: ""
 
   #Postgres connection details to execute the select queries
   postgresJDBC:
-    jdbcUrl: "noblrgwcda.cyjs0u2mcrgh.us-west-2.rds.amazonaws.com"
-    jdbcDatabase: "noblrgwcda"
-    jdbcSchema: "claims_merged"
-    postgres_user: "gwpostgresreaduser"
-    postgres_pwd: "gwpostgresreaduserpwd"
+    jdbcUrl: ""
+    jdbcDatabase: ""
+    jdbcSchema: ""
+    postgres_user: ""
+    postgres_pwd: ""
